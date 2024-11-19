@@ -4,6 +4,10 @@
 
 This incident is a XSS alert. Which is caused by an attacker injecting malicious code/scripts into legitimate web applications.
 
+**Summary**
+
+In this incident, I responded to a possible Cross-Site Scripting (XSS) attack after receiving an alert for "JavaScript code detected in URL." Upon investigation, I confirmed the alert as a true positive, identifying malicious JavaScript embedded in the request URL that indicated an attempt to exploit a server vulnerability. Fortunately, the attack was unsuccessful, as the server correctly triggered the alert and did not execute the malicious code. I contained and isolated the affected server to prevent further access, identified the malicious IP address and domain, and emphasized the importance of input validation, output encoding, and monitoring to mitigate similar threats in the future.
+
 **Incident Response:**
 
 * First step is to select `">>"` to create a case and accept responsibility
